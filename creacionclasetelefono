@@ -1,0 +1,51 @@
+public class Telefono {
+
+	//ATRIBUTOS O VARIABLES
+	private String GAMA;
+	private boolean tactil;
+	private boolean teclado;
+	private int año;
+	String color;
+	String marca;
+	String modelo;
+	
+	//METODOS Y ACCIONES
+	public Telefono(){
+	tactil =false;
+	teclado =true;
+	GAMA = "no aplica";
+	año = 1998;
+	color = "negro";
+	marca = "motorola";
+	modelo = "bloque";
+	}
+	public void Llamando(){
+		System.out.println("llamando");
+	}
+	//SETTERS (cambiadores de valores privados)
+	public void Cambia_Gama(String GamaNueva){
+		GAMA=GamaNueva;
+	}
+	public void Cambia_Tactil(boolean EsTactil){
+		tactil=EsTactil;
+	}
+	public void Cambia_Teclado(boolean TieneTeclado){
+		teclado =TieneTeclado;
+	}
+	public void Cambia_Año(int NuevoAño){
+		año=NuevoAño;
+	}
+	//GETTERS (Visualizadores)
+	public String MostrarGama (){
+	return GAMA;
+	}
+	public boolean MostrarTactil(){
+		return tactil;
+	}
+	public boolean MostrarTeclado(){
+		return teclado;
+	}
+	public int MostarAño(){
+		return año;
+	}
+}
